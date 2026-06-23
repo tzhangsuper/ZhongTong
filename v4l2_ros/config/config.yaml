@@ -1,0 +1,66 @@
+# Multi-Camera Configuration File
+# 配置6个相机的参数
+
+cameras:
+  - device_path: "/dev/video0"
+    topic_name: "/camera0/image_raw"
+    width: 1920
+    height: 1080
+    pixel_format: "UYVY"
+    fps: 30
+    frame_id: "camera0"
+    
+  - device_path: "/dev/video1"
+    topic_name: "/camera1/image_raw"
+    width: 1920
+    height: 1080
+    pixel_format: "UYVY"
+    fps: 30
+    frame_id: "camera1"
+    
+  - device_path: "/dev/video2"
+    topic_name: "/camera2/image_raw"
+    width: 1280
+    height: 720
+    pixel_format: "YUYV"
+    fps: 60
+    frame_id: "camera2"
+    
+  - device_path: "/dev/video3"
+    topic_name: "/camera3/image_raw"
+    width: 1920
+    height: 1080
+    pixel_format: "MJPEG"
+    fps: 30
+    frame_id: "camera3"
+    
+  - device_path: "/dev/video4"
+    topic_name: "/camera4/image_raw"
+    width: 640
+    height: 480
+    pixel_format: "YUYV"
+    fps: 120
+    frame_id: "camera4"
+    
+  - device_path: "/dev/video5"
+    topic_name: "/camera5/image_raw"
+    width: 1920
+    height: 1080
+    pixel_format: "UYVY"
+    fps: 30
+    frame_id: "camera5"
+
+# 支持的像素格式:
+# - YUYV: YUV 4:2:2 格式
+# - YVYU: YUV 4:2:2 格式 (变种)
+# - VYUY: YUV 4:2:2 格式 (变种)
+# - UYVY: YUV 4:2:2 格式 (变种)
+# - GREY: 灰度格式
+# - ABGR32: 32位ABGR格式
+# - MJPEG: Motion JPEG压缩格式
+
+# 注意事项:
+# 1. device_path 必须是有效的V4L2设备路径
+# 2. topic_name 在所有相机中必须唯一
+# 3. 确保硬件支持指定的分辨率和帧率
+# 4. frame_id 用于ROS TF变换，应该唯一且有意义

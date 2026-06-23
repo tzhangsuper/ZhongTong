@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>multi_camera_capture</name>
+  <version>1.0.0</version>
+  <description>Multi-camera capture using V4L2 and OpenCV with ROS integration</description>
+
+  <maintainer email="your.email@example.com">Your Name</maintainer>
+  <license>BSD</license>
+  
+  <url type="website">http://ros.org/wiki/multi_camera_capture</url>
+  <url type="bugtracker">https://github.com/yourusername/multi_camera_capture/issues</url>
+  <url type="repository">https://github.com/yourusername/multi_camera_capture</url>
+
+  <author email="your.email@example.com">Your Name</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>libopencv-dev</build_depend>
+  <build_depend>libyaml-cpp-dev</build_depend>
+
+  <!-- Build export dependencies -->
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>image_transport</build_export_depend>
+  <build_export_depend>cv_bridge</build_export_depend>
+  <build_export_depend>libopencv-dev</build_export_depend>
+  <build_export_depend>libyaml-cpp-dev</build_export_depend>
+
+  <!-- Runtime dependencies -->
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>libopencv-dev</exec_depend>
+  <exec_depend>libyaml-cpp-dev</exec_depend>
+
+  <export>
+  </export>
+</package>
